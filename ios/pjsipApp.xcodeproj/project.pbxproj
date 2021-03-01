@@ -16,6 +16,8 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* pjsipAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* pjsipAppTests.m */; };
+		337C89D025EA523C00D4B2F2 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 337C89CF25EA523C00D4B2F2 /* Intents.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		337C89D225EA524900D4B2F2 /* CallKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 337C89D125EA524900D4B2F2 /* CallKit.framework */; };
 		35EFDA7B2A58A72080B19155 /* libPods-pjsipApp-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1114DD8BD224824FCEE1AA81 /* libPods-pjsipApp-tvOS.a */; };
 		4158B7EF3B2CD04FAF0784B0 /* libPods-pjsipApp-pjsipAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6916F3385C9456A41021ECB /* libPods-pjsipApp-pjsipAppTests.a */; };
 		427BB2ED1E0159E80BD41A70 /* libPods-pjsipApp-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C935A4B445E89560E52B4D /* libPods-pjsipApp-tvOSTests.a */; };
@@ -58,6 +60,9 @@
 		26C935A4B445E89560E52B4D /* libPods-pjsipApp-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pjsipApp-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E47B1E0B4A5D006451C7 /* pjsipApp-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pjsipApp-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* pjsipApp-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pjsipApp-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		337C89CD25EA521F00D4B2F2 /* libRNCallKeep.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRNCallKeep.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		337C89CF25EA523C00D4B2F2 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		337C89D125EA524900D4B2F2 /* CallKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CallKit.framework; path = System/Library/Frameworks/CallKit.framework; sourceTree = SDKROOT; };
 		370B5C8B345FAF84EA36E413 /* Pods-pjsipApp-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pjsipApp-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-pjsipApp-tvOSTests/Pods-pjsipApp-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		47F70358ACE62186C2A1B10D /* Pods-pjsipApp-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pjsipApp-tvOS.release.xcconfig"; path = "Target Support Files/Pods-pjsipApp-tvOS/Pods-pjsipApp-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		69C84484EAEC03EB59CF0049 /* Pods-pjsipApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pjsipApp.release.xcconfig"; path = "Target Support Files/Pods-pjsipApp/Pods-pjsipApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -82,6 +87,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				337C89D225EA524900D4B2F2 /* CallKit.framework in Frameworks */,
+				337C89D025EA523C00D4B2F2 /* Intents.framework in Frameworks */,
 				91C0459CB4425298615014CC /* libPods-pjsipApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +146,9 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				337C89D125EA524900D4B2F2 /* CallKit.framework */,
+				337C89CF25EA523C00D4B2F2 /* Intents.framework */,
+				337C89CD25EA521F00D4B2F2 /* libRNCallKeep.a */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				C4936D7FD8C7222F4F068FFA /* libPods-pjsipApp.a */,
@@ -194,7 +204,6 @@
 				370B5C8B345FAF84EA36E413 /* Pods-pjsipApp-tvOSTests.debug.xcconfig */,
 				C00AED340C1C848109A0BB3F /* Pods-pjsipApp-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
